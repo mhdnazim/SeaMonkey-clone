@@ -1,0 +1,437 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: Manrope;
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: b Bagian;
+    src: url(../fonts/b_bagian/bBagian.ttf);
+}
+
+@font-face {
+    font-family: Manrope;
+    src: url(../fonts/Manrope/Manrope-Regular.ttf);
+}
+
+@font-face {
+    font-family: Manrop SemiBold;
+    src: url(../fonts/Manrope/Manrope-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: Manrop Medium;
+    src: url(../fonts/Manrope/Manrope-Medium.ttf);
+}
+
+@font-face {
+    font-family: Manrop Bold;
+    src: url(../fonts/Manrope/Manrope-Bold.ttf);
+}
+
+@font-face {
+    font-family: Manrop ExtraBold;
+    src: url(../fonts/Manrope/Manrope-ExtraBold.ttf);
+}
+
+/* ================================== */
+
+.container {
+    max-width: 1200px !important;
+    margin: 0 auto;
+    padding: 0 !important;
+}
+
+.card {
+    border: none !important;
+}
+
+/* ================Home================== */
+
+
+header {
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+}
+
+header a {
+    font-family: Manrop Bold;
+}
+
+header .container-fluid {
+    grid-gap: 40px;
+}
+
+header .btn {
+    text-align: left;
+    background-image: url(../images/GallarySVG.svg);
+    background-repeat: no-repeat;
+    background-position: center right 30px;
+    width: 153px;
+    min-height: 42px;
+    padding-left: 30px;
+}
+
+#home .wrapper {
+    background-color: #000000;
+    position: relative;
+    background-image: url(../images/home_bg.gif);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 777px;
+}
+
+#home #title h1 {
+    font-family: b Bagian;
+    font-size: 150px;
+    padding-top: 260px;
+}
+
+#home #title h4 {
+    font-family: Manrop ExtraBold;
+    font-size: 48px;
+}
+
+#home #title p {
+    font-family: Manrop Medium;
+    font-size: 24px;
+    padding: 47px 0 15px 0;
+}
+
+#home #title .btn {
+    text-align: left;
+    background-image: url(../images/GallarySVG.svg);
+    background-repeat: no-repeat;
+    background-position: center right 30px;
+    width: 180px;
+    min-height: 42px;
+    padding-left: 30px;
+}
+
+/* ================about================== */
+
+#about {
+    background-image: url(../images/about.png);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#about h2 {
+    font-family: b Bagian;
+    color: #000000;
+    font-size: 36px;
+    line-height: 39.23px;
+    letter-spacing: 2px;
+}
+
+#about h6 {
+    color: #393939;
+    font-size: 24px;
+    padding: 25px 0;
+}
+
+#about p {
+    color: #393939;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+/* ================Expedition================== */
+
+#expedition {
+    min-height: 886px;
+    display: flex;
+    align-items: center;
+}
+
+#expedition .button {
+    padding-bottom: 100px;
+}
+
+#expedition .button .btn {
+    text-align: left;
+    background-image: url(../images/GallarySVG.svg);
+    background-repeat: no-repeat;
+    background-position: center right 30px;
+    width: 200px;
+    min-height: 42px;
+    padding-left: 30px;
+}
+
+#expedition h2 {
+    font-family: b Bagian;
+    color: #000000;
+    font-size: 36px;
+    line-height: 39.23px;
+    letter-spacing: 2px;
+    padding-top: 133px;
+}
+
+#expedition .para {
+    color: #000000;
+    font-size: 16px;
+    line-height: 26px;
+    padding-top: 5px;
+}
+
+#expedition .card-body div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#expedition .card h4 {
+    font-family: Manrop Medium;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+#expedition .card p {
+    border-radius: 3px;
+    padding: 3px 17.61px;
+    font-family: Manrop Medium;
+    color: #393939;
+    font-size: 16px;
+    background: rgba(255, 165, 9, 0.5);
+}
+
+#expedition .card .location {
+    padding: 15px 0;
+}
+
+
+/* ================================== */
+
+#gallary {
+    background-image: url(../images/GalleryBG.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 925px;
+    padding-top: 91px;
+}
+
+
+
+#gallary h2 {
+    font-family: b Bagian;
+    color: #FFFFFF;
+    font-size: 36px;
+    line-height: 39.23px;
+    letter-spacing: 2px;
+}
+
+#gallary p {
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 26px;
+    padding: 5px 0px 52px 0px;
+}
+
+#gallary .button {
+    font-family: Manrop SemiBold;
+    padding: 70px 0;
+}
+
+#gallary .btn,
+#faq .btn {
+    text-align: left;
+    background-image: url(../images/GallarySVG.svg);
+    background-repeat: no-repeat;
+    background-position: center right 30px;
+    width: 153px;
+    min-height: 42px;
+    padding-left: 30px;
+}
+
+/* ================FAQ================== */
+
+#faq {
+    min-height: 915px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 119px 0px 100px 0px;
+}
+
+#faq h3 {
+    font-size: 24px;
+}
+
+#faq .accordion-body {
+    font-size: 16px;
+    color: #393939;
+    padding: 20px 0 77px 0;
+}
+
+#faq h2 {
+    font-family: b Bagian;
+    color: #000000;
+    font-size: 36px;
+    line-height: 39.23px;
+    letter-spacing: 2px;
+}
+
+#faq p {
+    color: #000000;
+    font-size: 16px;
+    line-height: 26px;
+    padding-top: 5px;
+}
+
+.accordion-item {
+    border-color: #000000 !important;
+}
+
+/* ================contact================== */
+
+#contact {
+    background-image: url(../images/contact_bg.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 867px;
+    display: flex;
+    align-items: center;
+}
+
+#contact .container {
+    max-width: 1095px !important;
+    min-height: 558px !important;
+    background-color: transparent;
+}
+
+#contact h4 {
+    color: #343434;
+    font-family: b Bagian;
+    font-size: 36px;
+    line-height: 39.23px;
+    letter-spacing: 2px;
+    padding-top: 29px;
+}
+
+#contact input,
+#contact textarea {
+    background-color: transparent;
+    border-color: #FFFFFF;
+}
+
+#contact label {
+    color: #FFFFFF;
+}
+
+#contact .button {
+    padding: 51px 0 36px 0;
+}
+
+#contact .btn {
+    text-align: left;
+    background-image: url(../images/GallarySVG.svg);
+    background-repeat: no-repeat;
+    background-position: center right 30px;
+    width: 143px;
+    min-height: 42px;
+    padding-left: 30px !important;
+}
+
+/* ================Footer================== */
+
+footer {
+    background-color: #000000;
+}
+
+footer a {
+    font-family: Manrop Medium;
+    text-decoration: none;
+}
+
+/* ================================== */
+
+
+
+/* Gallery.html  */
+
+#gallery-home .wrapper {
+    background-color: #000000;
+    position: relative;
+    background-image: url(../images/gallary_bg.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 777px;
+}
+
+#gallery-home #title h1 {
+    font-family: b Bagian;
+    font-size: 150px;
+    padding-top: 260px;
+}
+
+#gallary {
+    background-image: url(../images/GalleryBG.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 925px;
+    padding-top: 91px;
+}
+
+
+
+#gallary h2 {
+    font-family: b Bagian;
+    color: #FFFFFF;
+    font-size: 36px;
+    line-height: 39.23px;
+    letter-spacing: 2px;
+}
+
+#gallary p {
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 26px;
+    padding: 5px 0px 52px 0px;
+}
+
+#gallary .button {
+    font-family: Manrop SemiBold;
+    padding: 70px 0;
+}
+
+#gallary .btn,
+#faq .btn {
+    text-align: left;
+    background-image: url(../images/GallarySVG.svg);
+    background-repeat: no-repeat;
+    background-position: center right 30px;
+    width: 153px;
+    min-height: 42px;
+    padding-left: 30px;
+}
+
+
+
+/* faq.html  */
+
+#faq-home .wrapper {
+    background-color: #000000;
+    position: relative;
+    background-image: url(../images/faqhome.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 777px;
+}
