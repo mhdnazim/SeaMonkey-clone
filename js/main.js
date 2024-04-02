@@ -55,7 +55,7 @@ $(document).ready(function () {
 
     $(window).resize(function () {
         if ($(window).width() < 991) {
-            $("#empty").html("<img src='../images/explore_bg.png' width='100%'>")
+            $("#empty").html("<img src='./images/explore_bg.png' width='100%'>")
 
         } else {
             $("#empty").html("<div></div>")
