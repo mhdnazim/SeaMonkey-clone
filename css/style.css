@@ -49,6 +49,155 @@
     border: none !important;
 }
 
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open>.dropdown-toggle.btn-primary {
+    color: #fff;
+    background-color: #FFA509 !important;
+    border-color: #FFA509 !important;
+    /*set the color you want here*/
+}
+
+.whats-app {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 80px;
+    text-align: center;
+    font-size: 30px;
+    right: 15px;
+    z-index: 100;
+}
+
+.whats-app:hover {
+    transform: scale(1.1);
+    transition: 0.5s ease;
+}
+
+#myBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 15px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #006FF9;
+    color: white;
+    cursor: pointer;
+    padding: 8px 16px;
+    border-radius: 50%;
+    font-size: 18px;
+}
+
+#myBtn:hover {
+    background-color: #0070f9dc;
+}
+
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active,
+a.ui-button:active,
+.ui-button:active,
+.ui-button.ui-state-active:hover {
+    border: 1px solid #FFA509 !important;
+    background: #ffffff !important;
+    font-weight: normal;
+    color: #000000 !important;
+}
+
+.ui-state-active a,
+.ui-state-active a:link,
+.ui-state-active a:visited {
+    border: 1px solid #FFA509 !important;
+    color: #000000 !important;
+    text-decoration: none;
+}
+
+
+html .ui-button.ui-state-disabled:active {
+    border: 1px solid #FFA509 !important;
+    background: #fff !important;
+    font-weight: normal;
+    color: #454545;
+}
+
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default,
+.ui-button {
+    border: 1px solid #ffffff !important;
+    background: #fff !important;
+    font-weight: normal;
+    color: #454545;
+}
+
+.ui-widget-content {
+    border: none !important;
+    background: #ffffff;
+    color: #333333;
+}
+
+.owl-carousel.owl-drag .owl-item {
+    display: flex !important;
+    justify-content: center !important;
+}
+
+.ui-tabs .ui-tabs-panel {
+    padding: 0px !important;
+}
+
+.ui-tabs .ui-tabs-nav li.ui-tabs-active .ui-tabs-anchor {
+    color: #FFA509 !important;
+}
+
+.owl-carousel .owl-item img {
+    width: auto !important;
+}
+
+
+.tag {
+    opacity: 0;
+    transform: translate(0, 10vh);
+    transition: all 1s;
+}
+
+.tag.visible {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+#home,
+#gallery-home,
+#faq-home {
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+        transform: translate(0, 10vh);
+    }
+
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.accordion-button:not(.collapsed) {
+    box-shadow: none !important;
+}
+
+.accordion-button:focus {
+    box-shadow: none !important;
+}
+
+
+
 /* ================Home================== */
 
 
@@ -70,17 +219,20 @@ header .btn {
     text-align: left;
     background-image: url(../images/GallarySVG.svg);
     background-repeat: no-repeat;
-    background-position: center right 30px;
+    background-position: center right 20px;
     width: 153px;
     min-height: 42px;
     padding-left: 30px;
 }
 
-#home .wrapper {
-    background-color: #000000;
+header ul li a:hover,
+footer .link:hover {
+    color: #FFA509 !important;
+}
+
+#home .bg-img {
     position: relative;
     background-image: url(../images/home_bg.gif);
-    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -114,19 +266,24 @@ header .btn {
     padding-left: 30px;
 }
 
+#home .home-btn:hover {
+    background-color: #57d163 !important;
+    border: 1px solid #57d163 !important;
+}
+
 /* ================about================== */
 
 #about {
-    background-image: url(../images/about.png);
+    background-image: url(../images/explore_bg.png);
     background-position: right;
     background-size: contain;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
 }
 
 #about h2 {
     font-family: b Bagian;
-    color: #000000;
+    color: #1B1B1B;
     font-size: 36px;
     line-height: 39.23px;
     letter-spacing: 2px;
@@ -136,6 +293,8 @@ header .btn {
     color: #393939;
     font-size: 24px;
     padding: 25px 0;
+    font-weight: 400;
+    line-height: 32px;
 }
 
 #about p {
@@ -147,13 +306,12 @@ header .btn {
 /* ================Expedition================== */
 
 #expedition {
-    min-height: 886px;
     display: flex;
     align-items: center;
 }
 
 #expedition .button {
-    padding-bottom: 100px;
+    padding: 100px 0;
 }
 
 #expedition .button .btn {
@@ -172,26 +330,47 @@ header .btn {
     font-size: 36px;
     line-height: 39.23px;
     letter-spacing: 2px;
-    padding-top: 133px;
+    padding-top: 117px;
 }
 
 #expedition .para {
     color: #000000;
     font-size: 16px;
     line-height: 26px;
-    padding-top: 5px;
+    /* padding-top: 5px; */
 }
 
-#expedition .card-body div {
+.icon {
+    color: #000;
+    text-decoration: none;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 103px;
+    height: 112px;
+    transition: .5s ease;
+    border: 1px solid #FFA50900;
+}
+
+.icon:hover {
+    border-radius: 5px;
+    border: 1px solid #FFA509;
+}
+
+/* #expedition .card-body div {
     display: flex;
     justify-content: space-between;
     align-items: center;
+} */
+#expedition .card {
+    z-index: 2;
 }
 
 #expedition .card h4 {
     font-family: Manrop Medium;
     font-size: 20px;
-    letter-spacing: 1px;
+    letter-spacing: 1.1px;
 }
 
 #expedition .card p {
@@ -207,10 +386,20 @@ header .btn {
     padding: 15px 0;
 }
 
+#expedition .top-icon {
+    width: 50px;
+    height: 46px;
+    right: 0;
+    border-radius: 0px 0px 0px 20px;
+    background-color: rgb(255, 255, 255, .6);
+    padding: 7px 9px;
+}
+
+
 
 /* ================================== */
 
-#gallary {
+#gallery {
     background-image: url(../images/GalleryBG.png);
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -222,7 +411,7 @@ header .btn {
 
 
 
-#gallary h2 {
+#gallery h2 {
     font-family: b Bagian;
     color: #FFFFFF;
     font-size: 36px;
@@ -230,19 +419,19 @@ header .btn {
     letter-spacing: 2px;
 }
 
-#gallary p {
+#gallery p {
     color: #FFFFFF;
     font-size: 16px;
     line-height: 26px;
     padding: 5px 0px 52px 0px;
 }
 
-#gallary .button {
+#gallery .button {
     font-family: Manrop SemiBold;
     padding: 70px 0;
 }
 
-#gallary .btn,
+#gallery .btn,
 #faq .btn {
     text-align: left;
     background-image: url(../images/GallarySVG.svg);
@@ -270,7 +459,7 @@ header .btn {
 #faq .accordion-body {
     font-size: 16px;
     color: #393939;
-    padding: 20px 0 77px 0;
+    /* padding: 20px 0 77px 0; */
 }
 
 #faq h2 {
@@ -296,7 +485,6 @@ header .btn {
 
 #contact {
     background-image: url(../images/contact_bg.png);
-    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -324,10 +512,13 @@ header .btn {
 #contact textarea {
     background-color: transparent;
     border-color: #FFFFFF;
+    color: #ffffff;
 }
 
 #contact label {
     color: #FFFFFF;
+    font-family: Manrop Medium;
+    font-size: 14px;
 }
 
 #contact .button {
@@ -344,6 +535,8 @@ header .btn {
     padding-left: 30px !important;
 }
 
+
+
 /* ================Footer================== */
 
 footer {
@@ -353,6 +546,16 @@ footer {
 footer a {
     font-family: Manrop Medium;
     text-decoration: none;
+    color: #fff;
+}
+
+footer a:hover {
+    color: #FFA509;
+}
+
+
+footer .social a img:hover {
+    opacity: 0.5;
 }
 
 /* ================================== */
@@ -362,23 +565,22 @@ footer a {
 /* Gallery.html  */
 
 #gallery-home .wrapper {
-    background-color: #000000;
     position: relative;
     background-image: url(../images/gallary_bg.png);
-    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     min-height: 777px;
 }
 
-#gallery-home #title h1 {
+#gallery-home #title h1,
+#faq-home #title h1 {
     font-family: b Bagian;
     font-size: 150px;
     padding-top: 260px;
 }
 
-#gallary {
+#gallery {
     background-image: url(../images/GalleryBG.png);
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -390,7 +592,7 @@ footer a {
 
 
 
-#gallary h2 {
+#gallery h2 {
     font-family: b Bagian;
     color: #FFFFFF;
     font-size: 36px;
@@ -398,19 +600,21 @@ footer a {
     letter-spacing: 2px;
 }
 
-#gallary p {
+#gallery p {
     color: #FFFFFF;
     font-size: 16px;
     line-height: 26px;
     padding: 5px 0px 52px 0px;
 }
 
-#gallary .button {
+#gallery .button {
     font-family: Manrop SemiBold;
     padding: 70px 0;
 }
 
-#gallary .btn,
+
+
+#gallery .btn,
 #faq .btn {
     text-align: left;
     background-image: url(../images/GallarySVG.svg);
@@ -421,15 +625,55 @@ footer a {
     padding-left: 30px;
 }
 
+.videoframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    /* margin-right: 20px; */
+}
+
+.videoframe div:not(.top-icon) {
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.videoframe img:not(.right-img) {
+
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 0.5s ease;
+}
+
+.videoframe:hover img:not(.right-img) {
+    width: 100%;
+    height: 100%;
+    transform: scale(1.08);
+}
+
+.active-link {
+    position: relative;
+    left: -5px;
+    top: -22px;
+}
+
+.gallary-link {
+    position: relative;
+    left: -13px;
+    top: -22px;
+}
 
 
 /* faq.html  */
 
 #faq-home .wrapper {
-    background-color: #000000;
     position: relative;
     background-image: url(../images/faqhome.png);
-    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

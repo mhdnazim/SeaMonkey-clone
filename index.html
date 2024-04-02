@@ -2,24 +2,52 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Sea Monkey | Untamed Wilderness</title>
 
     <link rel="shortcut icon" href="./images/favicon.svg" type="image/x-icon">
-
-    <!-- css linking  -->
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/default.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./css/default.css">
 
     <!-- bootstrap linking  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
+    <!-- font awsome linking  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- owl carousal  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- owl-carousel  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+        integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- jquery  -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
+    <!-- tab   -->
+    <script>
+        $(function () {
+            $("#tabs").tabs()
+        });
+    </script>
+
+    <link rel="stylesheet" href="./assets/css/jquery.lightbox.css">
 
 
 </head>
+
+<!-- ============================================================================================ -->
 
 <body>
 
@@ -38,13 +66,13 @@
                     </button>
                     <hr class="hrcenter" width="547px" style="color: #ffffff; opacity: .75;">
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav gap-4 mb-2 mb-lg-0 ms-auto text-center ">
+                        <ul class="navbar-nav gap-4 mb-2 mb-lg-0 ms-auto text-center">
                             <li class="nav-item">
                                 <a class="nav-link active text-light " aria-current="page"
                                     href="#expedition">EXPEDITION</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active text-light" aria-current="page" href="#gallary">GALLERY</a>
+                                <a class="nav-link active text-light" aria-current="page" href="#gallery">GALLERY</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link active text-light" aria-current="page" href="#faq">FAQ</a>
@@ -62,17 +90,14 @@
 
     <!-- home section  -->
     <section id="home">
-        <div class="wrapper">
-            <!-- header  -->
-
-
+        <div class="bg-img">
             <!-- home title  -->
             <section id="title">
                 <div class="container text-light text-center">
                     <h1>Explore</h1>
                     <h4>Untamed Wilderness</h4>
                     <p>Now operating in Jordan</p>
-                    <button type="button" class="btn btn-primary">KNOW MORE</button>
+                    <button type="button" class="home-btn btn btn-primary">KNOW MORE</button>
                 </div>
             </section>
         </div>
@@ -83,17 +108,17 @@
     <section id="about">
         <div class="container">
             <!-- About 1 - Bootstrap Brain Component -->
-            <section class="py-3 py-md-5 py-xl-8">
+            <section class="py-3 py-md-5 py-lg-0">
                 <div class="container">
                     <div class="row gy-3 gy-md-4 gy-lg-0 align-items-lg-center">
 
                         <div class="col-12 col-lg-6 col-xl-6">
                             <div class="row justify-content-xl-center">
-                                <div class="col-12 col-xl-11">
+                                <div class="col-12 col-xl-11 p-0">
                                     <h2 class="h1 mb-0">About</h2>
                                     <h6 class="lead fs-4  mb-0">Welcome to SeaMonkey Expeditions, Jordan's
                                         Premier Wildlife Experience!</h6>
-                                    <p class="mb-5">At SeaMonkey Expeditions, we are dedicated to showcasing the
+                                    <p class="mb-2">At SeaMonkey Expeditions, we are dedicated to showcasing the
                                         remarkable wildlife of Jordan. Join us on an unforgettable
                                         journey to witness the Arabian Oryx, stunning birds, graceful water buffalos,
                                         and thriving marine life. Our passion for
@@ -107,150 +132,293 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-lg-6 col-xl-6">
+                        <div id="empty" class="col-12 col-lg-6 col-xl-6">
                             <!-- <img class="img-fluid rounded" loading="lazy" src="./images/about.png" alt=""> -->
                         </div>
                     </div>
                 </div>
             </section>
         </div>
+        <section>
+            <div class="position-relative z-1" style="bottom: 250px;">
+                <img src="./images/CONTOUR LINES.svg" alt="" class="lines position-absolute z-1">
+            </div>
+        </section>
     </section>
 
-    <!-- expedition  -->
+
     <section id="expedition">
         <div class="container">
             <div class="row">
                 <div class="title col-lg-12">
-                    <h2 class="text-center ">Expeditions</h2>
-                    <p class="para text-center ">Choose your exploration style</p>
+                    <h2 class="text-center m-0">Expeditions</h2>
+                    <p class="para text-center m-0 pt-2">Choose your exploration style</p>
                 </div>
             </div>
-            <div class="icons row d-flex  justify-content-center align-items-center " style="padding-top: 58px;">
-                <div class="col-lg-1"></div>
-                <div class="col-md-2 text-center ">
-                    <button type="button" class="btn btn-outline-warning" style="width: 103px; height: 112px;">All
-                        Trips</button>
-                </div>
-                <div class="col-md-2 col-sm-6 mt-3 text-center ">
-                    <img src="./images/icon1.svg" alt="">
-                    <p class="m-md-0">Hiking</p>
-                </div>
-                <div class="col-md-2 col-sm-6 text-center">
-                    <img src="./images/icon2.svg" alt="">
-                    <p class="m-md-0">Camping</p>
-                </div>
-                <div class="col-md-2 col-sm-6 text-center ">
-                    <img src="./images/icon3.svg" alt="">
-                    <p class="m-md-0">Sea Safari</p>
-                </div>
-                <div class="col-md-2 col-sm-6  text-center ">
-                    <img src="./images/icon4.svg" alt="">
-                    <p class="m-md-0">Vehicle safari</p>
-                </div>
-                <div class="col-lg-1"></div>
+            <div id="tabs">
+                <ul class="owl-carousel owl-theme d-flex justify-content-around "
+                    style="background-color: transparent; border:none; padding-bottom: 120px; padding-top: 58px;">
+                    <li class="item" style="background-color: transparent !important;">
+                        <a href="#tabs-1" class="icon">
+                            <p class="mb-0 text-center ">All <br> Trips</p>
+                        </a>
+                    </li>
+                    <li class="item"><a href="#tabs-2" class="icon">
+                            <img src="./images/icon1.svg" alt="">
+                            <p class="m-md-0">Hiking</p>
+                        </a></li>
+                    <li class="item"><a href="#tabs-3" class="icon">
+                            <img src="./images/icon2.svg" alt="">
+                            <p class="m-md-0">Camping</p>
+                        </a></li>
+                    <li class="item"><a href="#tabs-4" class="icon">
+                            <img src="./images/icon3.svg" alt="">
+                            <p class="m-md-0">Sea Safari</p>
+                        </a></li>
+                    <li class="item"><a href="#tabs-5" class="icon">
+                            <img src="./images/icon4.svg" alt="">
+                            <p class="m-md-0">Vehicle safari</p>
+                        </a></li>
+                </ul>
 
-            </div>
-            <div class="row" style="padding: 120px 0 100px 0;">
-                <div class="col-md-4">
-                    <!-- Card -->
-                    <div class="card">
-
-                        <!-- Card image -->
-                        <div class="view overlay">
-                            <img class="card-img-top" src="./images/card1.png" alt="Card image cap">
-                            <a href="#!">
-                                <div class="mask rgba-white-slight"></div>
-                            </a>
-                        </div>
-
-                        <!-- Card content -->
-                        <div class="card-body">
-
-                            <!-- Title -->
-                            <div>
-                                <h4 class="card-title">Water buffalo & bird <br>
-                                    watching trek</h4>
-                                <p>Hiking</p>
+                <div id="tabs-1">
+                    <div class="main-row row m-0 p-0">
+                        <div id="hiking" data-hiking="hiking" class="filtered-div card-one col-md-4 m-0 p-0 p-md-2">
+                            <div class="card">
+                                <div class="view overlay">
+                                    <div class="videoframe col-lg-12">
+                                        <div>
+                                            <a href="">
+                                                <div class="top-icon position-absolute z-1 ">
+                                                    <img class="right-img" src="./images/hiking (traced).svg" alt=""
+                                                        style="position: absolute; ; width:32px; height: 32px;">
+                                                </div>
+                                                <img src="./images/card1.png" alt="" width="100%">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body p-0 pt-3">
+                                    <div class="d-flex justify-content-between align-items-center ">
+                                        <h4 class="card-title m-0">Water buffalo & bird <br>
+                                            watching trek</h4>
+                                        <p>Hiking</p>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center ">
+                                        <div>
+                                            <h6 class="location mb-0"><img src="./images/loaction.svg" alt="">
+                                                Azraq, Jordan
+                                            </h6>
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-center ">
+                                            <img src="./images/time.svg" width="18.95" height="20" alt="">&nbsp;
+                                            <h6 class="mb-0">3 Hrs</h6>
+                                        </div>
+                                    </div>
+                                    <h6>Group size: Min 3 - Max 20</h6>
+                                </div>
                             </div>
-                            <!-- Text -->
-                            <div>
-                                <h6 class="location mb-0"><img src="./images/loaction.svg" alt=""> Azraq, Jordan</h6>
-                                <h6 class="mb-0"><img src="./images/time.svg" alt=""> 3 Hrs</h6>
-                            </div>
-                            <h6>Group size: Min 3 - Max 20</h6>
-
                         </div>
+                        <div id="Swimming" data-swimming="swimming"
+                            class="filtered-div card-two col-md-4 m-0 p-0 p-md-2">
+                            <div class="card">
+                                <div class="view overlay">
+                                    <div class="videoframe col-lg-12">
+                                        <div>
+                                            <a href="">
+                                                <div class="top-icon position-absolute z-1 ">
+                                                    <img class="right-img" src="./images/snorkeling (traced).svg" alt=""
+                                                        style="position: absolute; ; width:32px; height: 32px;">
+                                                </div>
+                                                <img src="./images/card2.png" alt="" width="100%">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body p-0 pt-3">
 
+                                    <!-- Title -->
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h4 class="card-title m-0">Scuba dive or <br> snorkel the red sea</h4>
+                                        <p>Sea safari</p>
+                                    </div>
+                                    <!-- Text -->
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h6 class="location mb-0"><img src="./images/loaction.svg" alt="">
+                                            Aqaba, Jordan
+                                        </h6>
+                                        <div class="d-flex justify-content-center align-items-center ">
+                                            <img src="./images/time.svg" width="18.95" height="20" alt="">&nbsp;
+                                            <h6 class="mb-0"> 6 Hrs</h6>
+                                        </div>
+                                    </div>
+                                    <h6>Group size: -</h6>
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <div id="Hiking" data-hiking="hiking" class="filtered-div card-three col-md-4 m-0 p-0 p-md-2">
+                            <div class="card">
+                                <div class="view overlay">
+                                    <div class="videoframe col-lg-12">
+                                        <div>
+                                            <a href="">
+                                                <div class="top-icon position-absolute z-1 ">
+                                                    <img class="right-img" src="./images/hiking (traced).svg" alt=""
+                                                        style="position: absolute; ; width:32px; height: 32px;">
+                                                </div>
+                                                <img src="./images/card3.png" alt="" width="100%">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body p-0 pt-3">
+                                    <div class="d-flex justify-content-between align-items-center ">
+                                        <h4 class="card-title m-0">Hike in the <br>
+                                            wild</h4>
+                                        <p>Hiking</p>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center ">
+                                        <div>
+                                            <h6 class="location mb-0"><img src="./images/loaction.svg" alt="">
+                                                Tafilah,
+                                                Jordan</h6>
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <img src="./images/time.svg" width="18.95" height="20" alt="">&nbsp;
+                                            <h6 class="mb-0">5 Hrs</h6>
+                                        </div>
+                                    </div>
+                                    <h6>Group size: Min 6 - Max 20</h6>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <!-- Card -->
                 </div>
-                <div class="col-md-4">
-                    <!-- Card -->
-                    <div class="card">
-
-                        <!-- Card image -->
-                        <div class="view overlay">
-                            <img class="card-img-top" src="./images/card2.png" alt="Card image cap">
-                            <a href="#!">
-                                <div class="mask rgba-white-slight"></div>
-                            </a>
+                <div id="tabs-2">
+                    <div class="main-row row m-0 p-0">
+                        <div id="hiking" data-hiking="hiking" class="filtered-div card-one col-md-4 m-0 p-0 p-md-2">
+                            <div class="card">
+                                <div class="view overlay">
+                                    <div class="videoframe col-lg-12">
+                                        <div>
+                                            <a href="">
+                                                <div class="top-icon position-absolute z-1 ">
+                                                    <img class="right-img" src="./images/hiking (traced).svg" alt=""
+                                                        style="position: absolute; ; width:32px; height: 32px;">
+                                                </div>
+                                                <img src="./images/card1.png" alt="" width="100%">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body p-0 pt-3">
+                                    <div class="d-flex justify-content-between align-items-center ">
+                                        <h4 class="card-title m-0">Water buffalo & bird <br>
+                                            watching trek</h4>
+                                        <p>Hiking</p>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center ">
+                                        <div>
+                                            <h6 class="location mb-0"><img src="./images/loaction.svg" alt="">
+                                                Azraq, Jordan
+                                            </h6>
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-center ">
+                                            <img src="./images/time.svg" width="18.95" height="20" alt="">&nbsp;
+                                            <h6 class="mb-0">3 Hrs</h6>
+                                        </div>
+                                    </div>
+                                    <h6>Group size: Min 3 - Max 20</h6>
+                                </div>
+                            </div>
                         </div>
 
-                        <!-- Card content -->
-                        <div class="card-body">
-
-                            <!-- Title -->
-                            <div>
-                                <h4 class="card-title">Scuba dive or <br> snorkel the red sea</h4>
-                                <p>Sea safari</p>
+                        <div id="Hiking" data-hiking="hiking" class="filtered-div card-three col-md-4 m-0 p-0 p-md-2">
+                            <div class="card">
+                                <div class="view overlay">
+                                    <div class="videoframe col-lg-12">
+                                        <div>
+                                            <a href="">
+                                                <div class="top-icon position-absolute z-1 ">
+                                                    <img class="right-img" src="./images/hiking (traced).svg" alt=""
+                                                        style="position: absolute; ; width:32px; height: 32px;">
+                                                </div>
+                                                <img src="./images/card3.png" alt="" width="100%">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body p-0 pt-3">
+                                    <div class="d-flex justify-content-between align-items-center ">
+                                        <h4 class="card-title m-0">Hike in the <br>
+                                            wild</h4>
+                                        <p>Hiking</p>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center ">
+                                        <div>
+                                            <h6 class="location mb-0"><img src="./images/loaction.svg" alt="">
+                                                Tafilah,
+                                                Jordan</h6>
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <img src="./images/time.svg" width="18.95" height="20" alt="">&nbsp;
+                                            <h6 class="mb-0">5 Hrs</h6>
+                                        </div>
+                                    </div>
+                                    <h6>Group size: Min 6 - Max 20</h6>
+                                </div>
                             </div>
-                            <!-- Text -->
-                            <div>
-                                <h6 class="location mb-0"><img src="./images/loaction.svg" alt=""> Aqaba, Jordan</h6>
-                                <h6 class="mb-0"><img src="./images/time.svg" alt=""> 6 Hrs</h6>
-                            </div>
-                            <h6>Group size: -</h6>
-
-
                         </div>
-
                     </div>
-                    <!-- Card -->
                 </div>
-                <div class="col-md-4">
-                    <!-- Card -->
-                    <div class="card">
+                <div id="tabs-3">
 
-                        <!-- Card image -->
-                        <div class="view overlay">
-                            <img class="card-img-top" src="./images/card3.png" alt="Card image cap">
-                            <a href="#!">
-                                <div class="mask rgba-white-slight"></div>
-                            </a>
-                        </div>
-
-                        <!-- Card content -->
-                        <div class="card-body">
-
-                            <!-- Title -->
-                            <!-- Title -->
-                            <div>
-                                <h4 class="card-title">Hike in the <br>
-                                    wild</h4>
-                                <p>Hiking</p>
+                </div>
+                <div id="tabs-4">
+                    <div id="Swimming" data-swimming="swimming" class="filtered-div card-two col-md-4 m-0 p-0 p-md-2">
+                        <div class="card">
+                            <div class="view overlay">
+                                <div class="videoframe col-lg-12">
+                                    <div>
+                                        <a href="">
+                                            <div class="top-icon position-absolute z-1 ">
+                                                <img class="right-img" src="./images/snorkeling (traced).svg" alt=""
+                                                    style="position: absolute; ; width:32px; height: 32px;">
+                                            </div>
+                                            <img src="./images/card2.png" alt="" width="100%">
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
-                            <!-- Text -->
-                            <div>
-                                <h6 class="location mb-0"><img src="./images/loaction.svg" alt=""> Tafilah, Jordan</h6>
-                                <h6 class="mb-0"><img src="./images/time.svg" alt=""> 5 Hrs</h6>
+                            <div class="card-body p-0 pt-3">
+
+                                <!-- Title -->
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h4 class="card-title m-0">Scuba dive or <br> snorkel the red sea</h4>
+                                    <p>Sea safari</p>
+                                </div>
+                                <!-- Text -->
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h6 class="location mb-0"><img src="./images/loaction.svg" alt="">
+                                        Aqaba, Jordan
+                                    </h6>
+                                    <div class="d-flex justify-content-center align-items-center ">
+                                        <img src="./images/time.svg" width="18.95" height="20" alt="">&nbsp;
+                                        <h6 class="mb-0"> 6 Hrs</h6>
+                                    </div>
+                                </div>
+                                <h6>Group size: -</h6>
+
+
                             </div>
-                            <h6>Group size: Min 6 - Max 20</h6>
-
-
                         </div>
-
                     </div>
-                    <!-- Card -->
+
+                </div>
+                <div id="tabs-5">
+
                 </div>
             </div>
             <div class="button text-center ">
@@ -260,8 +428,9 @@
         </div>
     </section>
 
+
     <!-- Gallary section -->
-    <section id="gallary">
+    <section id="gallery">
         <div class="container">
             <div class="row">
                 <div class="title col-lg-12">
@@ -270,38 +439,51 @@
                 </div>
             </div>
             <!-- Gallery -->
-            <div class="row">
-                <div class="col-lg-5 col-md-12 mb-4 mb-lg-0">
-                    <img src="./images/Gallery1.png" class="w-100 shadow-1-strong rounded mb-4" alt="Elephants" />
-
-
-                </div>
-
-                <div class="col-lg-7 mb-4 mb-lg-0">
+            <div class="row tag">
+                <div class=" col-lg-5 col-md-12 rounded mb-4">
                     <div class="row">
-                        <div class="col-lg-6">
-                            <img src="./images/Gallery2.png" class="w-100 shadow-1-strong rounded mb-4" alt="Hiking" />
+                        <div class="videoframe col-lg-12 ps-lg-0 pe-lg-3">
+                            <div class="gallery">
+                                <a href="./images/Gallery1.png"><img src="./images/Gallery1.png" alt=""></a>
+                            </div>
                         </div>
-                        <div class="col-lg-6">
-                            <img src="./images/Gallery3.png" class="w-100 shadow-1-strong rounded mb-4" alt="Tent" />
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <img src="./images/Gallery4.png" class="w-100 shadow-1-strong rounded mb-4 mt-1"
-                                alt="Under Water" />
-                        </div>
+
                     </div>
                 </div>
 
+                <div class="col-lg-7">
+                    <div class="row">
+                        <div class="imgBox col-md-6 rounded p-lg-0 px-lg-3">
+                            <div class="videoframe col-lg-12" style="padding-bottom: 30px;">
+                                <div class="gallery">
+                                    <a href="./images/Gallery2.png"><img src="./images/Gallery2.png" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="imgBox col-md-6 rounded ps-lg-3 pe-lg-0">
+                            <div class="videoframe col-lg-12" style="padding-bottom: 30px;">
+                                <div class="gallery">
+                                    <a href="./images/Gallery3.png"><img src="./images/Gallery3.png" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="videoframe col-lg-12 ps-lg-3 pe-lg-0">
+                            <div class="gallery">
+                                <a href="./images/Gallery4.png"><img src="./images/Gallery4.png" alt=""></a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Gallery -->
+                </div>
             </div>
-            <!-- Gallery -->
-
             <div class="button text-center ">
-               <a href="./pages/gallary.html">
-                <button type="button" class="btn btn-primary">VIEW
-                    ALL</button>
-               </a>
+                <a href="./pages/gallery.html">
+                    <button type="button" class="btn btn-primary">VIEW
+                        ALL</button>
+                </a>
             </div>
         </div>
     </section>
@@ -326,7 +508,8 @@
                         </h2>
                         <div id="flush-collapseTwo" class="accordion-collapse collapse"
                             aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">Jordan is home to vast wildlife, the country is a very important
+                            <div class="accordion-body pe-md-5">Jordan is home to vast wildlife, the country is a very
+                                important
                                 migratory route for many bird species, the red sea is
                                 home to over 500 species of fish. Apart from the vast Jordanian wilderness, at a
                                 Seamonkey
@@ -354,7 +537,8 @@
                         </h2>
                         <div id="flush-collapseOne" class="accordion-collapse" aria-labelledby="flush-headingOne"
                             data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">Jordan is home to vast wildlife, the country is a very important
+                            <div class="accordion-body pe-md-5">Jordan is home to vast wildlife, the country is a very
+                                important
                                 migratory route for many bird species, the red sea is
                                 home to over 500 species of fish. Apart from the vast Jordanian wilderness, at a
                                 Seamonkey
@@ -383,7 +567,8 @@
                         </h2>
                         <div id="flush-collapseThree" class="accordion-collapse collapse"
                             aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">Jordan is home to vast wildlife, the country is a very important
+                            <div class="accordion-body pe-md-5">Jordan is home to vast wildlife, the country is a very
+                                important
                                 migratory route for many bird species, the red sea is
                                 home to over 500 species of fish. Apart from the vast Jordanian wilderness, at a
                                 Seamonkey
@@ -415,13 +600,13 @@
 
     <!-- contact section  -->
     <section id="contact">
-        <div class="container">
-            <div class="row">
+        <div class="container py-4 py-sm-4 p-md-4 p-xl-0">
+            <div class="row m-0 rounded-2" style="backdrop-filter: blur(8px); background-color: #ffffff33; ">
                 <div class="col-lg-4 p-0">
                     <img src="./images/contact.png" alt="" width="100%">
                 </div>
-                <div id="form" class="col-lg-8" style="backdrop-filter: blur(8px); background-color: #ffffff33; ">
-                    <h4 class="text-center">Lets get connected</h4>
+                <div id="form" class="col-lg-8">
+                    <h4 class="text-center m-0 p-4">Lets get connected</h4>
                     <form>
                         <div class="row" style="padding: 0px 30px;">
                             <div class="col-lg-6">
@@ -441,14 +626,16 @@
                             <div class="col-lg-6">
                                 <div class="mb-3">
                                     <label for="email" class="form-label mb-0">Email</label>
-                                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
+                                        required>
 
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="mb-3">
                                     <label for="phone" class="form-label mb-0">Phone</label>
-                                    <input type="email" class="form-control" id="phone" aria-describedby="emailHelp">
+                                    <input type="email" class="form-control" id="phone" aria-describedby="emailHelp"
+                                        required>
 
                                 </div>
                             </div>
@@ -460,7 +647,7 @@
                             </div>
                         </div>
                         <div class="button text-center">
-                            <button type="button" class="btn btn-primary">SUBMIT</button>
+                            <button type="submit" class="btn btn-primary">SUBMIT</button>
                         </div>
                     </form>
                 </div>
@@ -481,48 +668,33 @@
 
                         <div class="row">
                             <div class="col-12">
-                                <img src="./images/footer_logo.svg" alt="" style="padding-top: 10px;">
+                                <a href="#">
+                                    <img src="./images/footer_logo.svg" alt="" style="padding-top: 10px;">
+                                </a>
                             </div>
                         </div>
 
                         <!-- Grid row-->
-                        <div class="row text-center d-flex justify-content-center" style="padding: 36px 0px 62px 0px;">
-                            <!-- Grid column -->
-                            <div class="col-md-3"></div>
-                            <div class="col-md-2">
-                                <h6 class="text-uppercase font-weight-bold">
-                                    <a href="#!" class="text-white">Expeditions</a>
-                                </h6>
-                            </div>
-                            <!-- Grid column -->
-
-                            <!-- Grid column -->
-                            <div class="col-md-1">
-                                <h6 class="text-uppercase font-weight-bold">
-                                    <a href="#!" class="text-white">GALLERY</a>
-                                </h6>
-                            </div>
-                            <!-- Grid column -->
-
-                            <!-- Grid column -->
-                            <div class="col-md-1">
-                                <h6 class="text-uppercase font-weight-bold">
-                                    <a href="#!" class="text-white">FAQ</a>
-                                </h6>
-                            </div>
-                            <!-- Grid column -->
-
-                            <!-- Grid column -->
-                            <div class="col-md-2">
-                                <h6 class="text-uppercase font-weight-bold">
-                                    <a href="#!" class="text-white">Privacy policies</a>
-                                </h6>
-                            </div>
-
-                            <div class="col-md-3"></div>
-
-                            <!-- Grid column -->
-
+                        <div class="row">
+                            <ul class="d-sm-flex justify-content-center align-items-center column-gap-4 p-5 m-0">
+                                <li><a href="#expedition">
+                                        EXPEDITION
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#gallery">
+                                        GALLERY
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#faq">
+                                        FAQ
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">PRIVACY POLICIES</a>
+                                </li>
+                            </ul>
                         </div>
                         <!-- Grid row-->
                     </section>
@@ -530,19 +702,31 @@
 
 
                     <!-- Section: Social -->
-                    <section class="text-center" style="margin-bottom: 36px;">
-                        <a href="" class="text-white me-4">
-                            <img src="./images/facebook.svg" alt="">
-                        </a>
-                        <a href="" class="text-white me-4">
-                            <img src="./images/twitter-square.svg" alt="">
-                        </a>
-                        <a href="" class="text-white me-4">
-                            <img src="./images/instagram-solid.svg" alt="">
-                        </a>
-                        <a href="" class="text-white me-4">
-                            <img src="./images/whatsapp.svg" alt="">
-                        </a>
+                    <section class="social text-center" style="margin-bottom: 36px;">
+                        <ul class="d-flex justify-content-center ">
+                            <li>
+                                <a href="" class="text-white me-4">
+                                    <img src="./images/facebook.svg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="text-white me-4">
+                                    <img src="./images/twitter-square.svg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="text-white me-4">
+                                    <img src="./images/instagram-solid.svg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="text-white me-4">
+                                    <img src="./images/whatsapp.svg" alt="">
+                                </a>
+                            </li>
+                        </ul>
+
+
                     </section>
                     <!-- Section: Social -->
 
@@ -553,8 +737,8 @@
 
                 <!-- Copyright -->
                 <div class="container d-flex justify-content-between  p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-                    <p>Copyright © 2023 Seemonkey</p>
-                    <p>Terms & Conditions</p>
+                    <p>Copyright &copy; 2023 Seemonkey</p>
+                    <a href="#">Terms & Conditions</a>
                 </div>
                 <!-- Copyright -->
             </div>
@@ -563,44 +747,42 @@
         <!-- End of .container -->
     </footer>
 
+    <!-- Button for toggle up and redirect to whatsapp -->
+    <div>
+        <a class="whats-app"
+            href="https://api.whatsapp.com/send/?phone=%2B962799900914&text&type=phone_number&app_absent=0"
+            target="_blank">
+            <img src="./images/WhatsApp 1.svg" alt="">
+        </a>
+    </div>
+    <div>
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"
+                style="color: #ffffff;"></i></button>
+    </div>
+
+    <!-- ==================================================================================================== -->
+    <!-- scripts  -->
+
 
     <!-- bootstrap script  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+
+    <!-- owl-carousel script  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <script type="text/javascript">
-
-        var prevScrollpos = window.pageYOffset
-        window.onscroll = function () {
-
-            var currentScrollpos = window.pageYOffset
-            if (prevScrollpos > currentScrollpos) {
-                document.getElementById("navbar").style.top = "0"
-                document.getElementById("navbar").style.background = "#000000"
-
-            } else {
-                document.getElementById("navbar").style.top = "-100%"
-                // document.getElementById("navbar").style.background = "#000000"
-            }
-
-            prevScrollpos = currentScrollpos
-
-        }
-
-    </script>
-
+    <!-- external script  -->
+    <script src="./js/main.js"></script>
+    <script src="./assets/js/jquery.lightbox.js"></script>
     <script>
         $(document).ready(function () {
-            $(window).scroll(function () {
-                if ($(this).scrollTop() == 0) {
-                    //Do whatever you want to do
-                    document.getElementById("navbar").style.background = "#00000000"
-                }
+            // Initiate Lightbox
+            $(function () {
+                $('.gallery a').lightbox()
             })
         })
 

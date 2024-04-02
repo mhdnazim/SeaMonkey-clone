@@ -12,18 +12,39 @@
     footer {
         padding-top: 30px;
     }
+
+    .lines {
+        display: none;
+    }
+
+    #about {
+        background-image: none;
+    }
+
+    #gallery-items p {
+        padding: 30px 0px !important;
+    }
+
+    .nav-item {
+        max-height: 40px !important;
+    }
 }
 
-@media screen and (max-width:1200px) {
+@media screen and (max-width:1199px) {
     .container {
         padding: 0 15px !important;
+    }
+
+    #gallery-items .container {
+        padding-bottom: 120px !important;
     }
 }
 
 @media screen and (max-width:460px) {
 
     #home #title h1,
-    #gallery-home #title h1 {
+    #gallery-home #title h1,
+    #faq-home #title h1 {
         font-size: 85px;
     }
 
@@ -46,4 +67,67 @@
     #home #title h4 {
         font-size: 30px;
     }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 1200px) and (min-width:992px) {
+    #contact .button {
+        padding: 25px 0 30px 0;
+    }
+
+    #gallery-items .container .tag {
+        padding: 0 15px !important;
+    }
+
+
+}
+
+@media screen and (min-width:1200px) {
+    #about .container section .container {
+        padding: 130px 0px !important;
+    }
+
+    /* #expedition .card {
+        max-width: 360.21px;
+    } */
+
+    .accordion-button,
+    .accordion-body {
+        padding-left: 72px !important;
+
+    }
+
+    .accordion-body {
+        padding-bottom: 77px !important;
+    }
+
+    #gallery-items .container {
+        padding-bottom: 120px !important;
+    }
+
+    .main.row {
+        gap: 60px !important;
+    }
+
+    #expedition .buttons {
+        padding: 58px 0px 120px 0px;
+    }
+
+
+    #expedition .card-one {
+        padding-left: 30px !important;
+        padding-right: 30px !important;
+    }
+
+    #expedition .card-two {
+        padding-left: 30px !important;
+        padding-right: 30px !important;
+    }
+
+    #expedition .card-three {
+        padding-left: 30px !important;
+        padding-right: 30px !important;
+    }
+
+
 }
